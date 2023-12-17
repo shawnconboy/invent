@@ -24,12 +24,17 @@ a {
     text-decoration: none;
     cursor: pointer;
     padding: 0px 10px;
-    transition: color 100ms;
+    transition: transform 0.3s;
+    /* Adjust transition duration */
+    display: inline-block;
+    /* Ensures proper hover area for scaling */
 }
 
 a:hover {
+    transform: scale(1.1);
     color: rgb(121, 219, 121);
 }
+
 
 button {
     font-size: 0.8rem;
@@ -38,7 +43,7 @@ button {
     border-radius: 6px;
     color: white;
     cursor: pointer;
-    transition: 100ms;
+    transition: transform 0.3s;
 }
 
 button:hover {
