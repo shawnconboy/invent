@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 1.4rem;
+    padding: 0px 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0px 10px;
+    transition: color 100ms;
+}
+
+a:hover {
+    color: rgb(121, 219, 121);
+}
