@@ -2,11 +2,16 @@ body {
     background-color: rgb(29, 29, 29);
     color: white;
     font-size: 16pt;
+    margin: 2% 1%;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+}
+
+h2 {
+    color: green;
 }
 
 label {
@@ -24,4 +29,18 @@ a {
 
 a:hover {
     color: rgb(121, 219, 121);
+}
+
+button {
+    font-size: 0.8rem;
+    background-color: transparent;
+    border: solid white 1px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
