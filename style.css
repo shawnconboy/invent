@@ -49,3 +49,17 @@ button {
 button:hover {
     transform: scale(1.1);
 }
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0% 10%;
+}
+
+.leftSide {
+    width: 40%;
+}
+
+.rightSide {
+    width: 40%;
+}
