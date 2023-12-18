@@ -10,8 +10,18 @@ nav {
     justify-content: space-between;
 }
 
+#inventLogo {
+    font-size: 1.7rem;
+}
+
+#letterV {
+    color: rgb(121, 219, 121);
+    letter-spacing: 0.1px;
+}
+
 h2 {
-    color: green;
+    color: rgb(121, 219, 121);
+
 }
 
 label {
@@ -37,7 +47,7 @@ a:hover {
 
 
 button {
-    font-size: 0.8rem;
+    font-size: 1rem;
     background-color: transparent;
     border: solid white 1px;
     border-radius: 6px;
@@ -48,6 +58,7 @@ button {
 
 button:hover {
     transform: scale(1.1);
+    border: 1px solid rgb(121, 219, 121);
 }
 
 .container {
@@ -63,3 +74,5 @@ button:hover {
 .rightSide {
     width: 40%;
 }
+
+li {}
