@@ -8,6 +8,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    margin: 0% 5%;
 }
 
 #inventLogo {
@@ -75,4 +76,29 @@ button:hover {
     width: 40%;
 }
 
-li {}
+.taskListItems>li,
+span {
+    display: inline;
+}
+
+/* .taskListItems>li {
+    /* margin-right: 80%; */
+/* } */
+
+.taskListItems>span {
+    /* display: flex; */
+    justify-content: end;
+}
+
+*/ #taskListItemsList {
+    border: 1px solid white;
+}
+
+#taskListItemsList>.taskListItems {
+    width: 100%;
+    padding: 8px 0px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}

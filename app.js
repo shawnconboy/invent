@@ -1,5 +1,5 @@
 let addTaskBtn = document.getElementById('addTaskBtn');
-let taskList = document.getElementById('taskListItems');
+let taskList = document.getElementById('taskListItemsList');
 
 function capitalizeWords(str) {
     return str.replace(/\b\w/g, function (char) {
@@ -18,8 +18,11 @@ addTaskBtn.addEventListener('click', function () {
     }
 });
 
-let loginStatus = document.getElementById('userLogin');
+let deleteButton = document.querySelectorAll('.deleteButton');
 
-if (loginStatus.textContent === 'Login') {
-    loginStatus.textContent('Sign Out');
-}
+deleteButton.forEach(button => {
+    button.addEventListener('click', function () {
+        let parentDiv = button.parentNode;
+        parentDiv.remove();
+    });
+});
