@@ -17,3 +17,9 @@ addTaskBtn.addEventListener('click', function () {
         taskList.appendChild(newTask);
     }
 });
+
+let loginStatus = document.getElementById('userLogin');
+
+if (loginStatus.textContent === 'Login') {
+    loginStatus.textContent('Sign Out');
+}
