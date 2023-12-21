@@ -23,33 +23,28 @@
         </div>
     </nav>
 
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add a Task</h2>
+            <input type="text" id="taskInput" placeholder="Enter your task">
+            <button id="saveTaskBtn">Save</button>
+        </div>
+    </div>
+
     <div class="container">
         <div class="leftSide">
             <div class="dailyTask">
                 <h2>Today's Tasks</h2>
 
-
                 <ul id="taskListItemsList">
-
                     <div class="taskListItems">
                         <li>Clean Glass Doors</li>
                         <button class="deleteButton">x</button>
                     </div>
-
-                    <div class="taskListItems">
-                        <li>Run Truck</li>
-                        <button class="deleteButton">x</button>
-                    </div>
-
-                    <div class="taskListItems">
-                        <li>Work Backstock</li>
-                        <button class="deleteButton">x</button>
-                    </div>
                 </ul>
-
-
-
                 <button id="addTaskBtn">Add Task</button>
+
             </div>
 
             <div class="expirations">
