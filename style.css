@@ -178,12 +178,10 @@ footer>p {
     display: block;
     width: 100%;
     text-align: center;
-    background-color: #424242;
+    background-color: #282828;
     color: #fff;
-    /* Text color */
 }
 
 footer>p::before {
     margin-right: 5px;
-    /* Adjust spacing between the symbol and text */
 }
