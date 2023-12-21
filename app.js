@@ -1,5 +1,7 @@
 let addTaskBtn = document.getElementById('addTaskBtn');
 let taskList = document.getElementById('taskListItemsList');
+let taskInput = document.getElementById('taskInput');
+let saveTaskBtn = document.getElementById('saveTaskBtn');
 
 function capitalizeWords(str) {
     return str.replace(/\b\w/g, function (char) {
@@ -10,6 +12,8 @@ function capitalizeWords(str) {
 addTaskBtn.addEventListener('click', function () {
     // Display the custom modal
     document.getElementById('taskModal').style.display = 'block';
+
+    taskInput.value = '';
     taskInput.focus();
 });
 
@@ -44,6 +48,21 @@ document.getElementById('saveTaskBtn').addEventListener('click', function () {
         // Clear the input field and hide the modal
         taskInput.value = '';
         document.getElementById('taskModal').style.display = 'none';
+    }
+});
+
+document.addEventListener('keydown', function (event) {
+    var modal = document.getElementById('taskModal');
+    if (event.key === 'Escape' && modal.style.display === 'block') {
+        // Close the modal without submitting anything
+        modal.style.display = 'none';
+    } else if (
+        (event.key === 't' || event.key === 'T') &&
+        document.activeElement !== taskInput
+    ) {
+        event.preventDefault();
+        // Create a new task (similar to clicking the addTaskBtn)
+        addTaskBtn.click();
     }
 });
 
