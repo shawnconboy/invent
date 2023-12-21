@@ -10,6 +10,7 @@ function capitalizeWords(str) {
 addTaskBtn.addEventListener('click', function () {
     // Display the custom modal
     document.getElementById('taskModal').style.display = 'block';
+    taskInput.focus();
 });
 
 // Add the following code to handle the custom modal's Save button
@@ -46,7 +47,6 @@ document.getElementById('saveTaskBtn').addEventListener('click', function () {
     }
 });
 
-// Existing code for deleting tasks
 let deleteButtons = document.querySelectorAll('.deleteButton');
 
 deleteButtons.forEach(button => {
@@ -57,22 +57,23 @@ deleteButtons.forEach(button => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Get the modal and the button that opens it
     var modal = document.getElementById('taskModal');
     var addTaskBtn = document.getElementById('addTaskBtn');
-
-    // Get the <span> element that closes the modal
     var span = document.getElementsByClassName('close')[0];
 
-    // When the user clicks on <span> (x), close the modal
     span.addEventListener('click', function () {
         modal.style.display = 'none';
     });
 
-    // When the user clicks anywhere outside of the modal, close it
     window.addEventListener('click', function (event) {
         if (event.target == modal) {
             modal.style.display = 'none';
+        }
+    });
+
+    taskInput.addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') {
+            saveTaskBtn.click();
         }
     });
 });
