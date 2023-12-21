@@ -36,9 +36,7 @@ a {
     cursor: pointer;
     padding: 0px 10px;
     transition: transform 0.3s;
-    /* Adjust transition duration */
     display: inline-block;
-    /* Ensures proper hover area for scaling */
 }
 
 a:hover {
@@ -81,12 +79,7 @@ span {
     display: inline;
 }
 
-/* .taskListItems>li {
-    /* margin-right: 80%; */
-/* } */
-
 .taskListItems>span {
-    /* display: flex; */
     justify-content: end;
 }
 
@@ -116,12 +109,14 @@ span {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #424242;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
 }
 
 .close {
@@ -140,9 +135,13 @@ span {
 }
 
 #taskInput {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #262626;
+    color: #aaa;
 }
 
 #saveTaskBtn {
