@@ -9,10 +9,9 @@ function capitalizeWords(str) {
     });
 }
 
+// When the addTaskBtn is clicked, the modal will appear
 addTaskBtn.addEventListener('click', function () {
-    // Display the custom modal
     document.getElementById('taskModal').style.display = 'block';
-
     taskInput.value = '';
     taskInput.focus();
 });
