@@ -94,10 +94,6 @@ span {
     justify-content: end;
 }
 
-*/ #taskListItemsList {
-    border: 1px solid white;
-}
-
 #taskListItemsList>.taskListItems {
     width: 100%;
     padding: 8px 0px;
@@ -153,6 +149,7 @@ span {
     border: none;
     background-color: #262626;
     color: #aaa;
+    font-size: 16px;
 }
 
 #saveTaskBtn {
