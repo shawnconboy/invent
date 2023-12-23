@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
     // Task-related code
     let addTaskBtn = document.getElementById('addTaskBtn');
     let taskList = document.getElementById('taskListItemsList');
@@ -52,10 +58,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var modal = document.getElementById('taskModal');
         if (event.key === 'Escape' && modal.style.display === 'block') {
             modal.style.display = 'none';
-        } else if (
-            (event.key === 't' || event.key === 'T') &&
-            document.activeElement !== taskInput
-        ) {
+            // } else if (
+            //     (event.key === 't' || event.key === 'T') &&
+            //     document.activeElement !== taskInput
+            // ) {
             event.preventDefault();
             addTaskBtn.click();
         }
@@ -89,6 +95,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+
+    // 
+    // 
+    // 
+    // 
+    // 
     // Expiration-related code
     let addItemBtn = document.getElementsByClassName('addItemBtn')[0];
     let expirationList = document.getElementById('expirationsList');
@@ -136,10 +148,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var modal = document.getElementById('expirationsModal');
         if (event.key === 'Escape' && modal.style.display === 'block') {
             modal.style.display = 'none';
-        } else if (
-            (event.key === 'e' || event.key === 'E') &&
-            document.activeElement !== expirationInput
-        ) {
+            // } else if (
+            //     (event.key === 'e' || event.key === 'E') &&
+            //     document.activeElement !== expirationInput
+            // ) {
             event.preventDefault();
             addItemBtn.click();
         }
@@ -164,3 +176,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// 
+// 
+// 
+// 
+// 
+// 
+// Coworker Related Code
+
