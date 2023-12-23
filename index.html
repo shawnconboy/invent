@@ -34,14 +34,24 @@
     <div id="taskModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Add a Task</h2>
-            <input type="text" id="taskInput" placeholder="Enter your task">
+            <h2>Add Task</h2>
+            <input type="text" id="taskInput" placeholder="Enter Task">
             <button id="saveTaskBtn">Submit</button>
+        </div>
+    </div>
+
+    <div id="expirationsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Item</h2>
+            <input type="text" id="expirationInput" placeholder="Enter Item">
+            <button id="saveItemBtn">Submit</button>
         </div>
     </div>
 
     <div class="container">
         <div class="leftSide">
+
             <div class="dailyTask">
                 <h2>Today's Tasks</h2>
 
@@ -52,26 +62,27 @@
                     </div>
                 </ul>
                 <button id="addTaskBtn">Add Task</button>
-
             </div>
 
-            <div class="expirations">
+            <div class="expiringItemsList">
+                <h2>Expiring Soon</h2>
 
-                <h2>Expirations</h2>
-
-                <div class="expirationsList">
-                    <h3>Expiring Soon</h3>
-                    <ul>
-                        <li id="itemExpiring">
-                            <span id="itemName">Chobani Yogurt</span>
-                            <span id="expirationDate">12/23/2023</span>
-                        </li>
-                    </ul>
-
-                    <button>Add Item</button>
-                </div>
+                <ul id="expirationsList">
+                    <div class="expiringItems">
+                        <li>Chobani Yogurt</li>
+                        <span id="expirationDate">12/23/23</span>
+                        <button class="deleteButton">x</button>
+                    </div>
+                </ul>
+                <button class="addItemBtn">Add Item</button>
             </div>
+
         </div>
+
+
+
+
+
 
         <div class="rightSide">
 
