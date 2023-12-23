@@ -74,7 +74,8 @@ button:hover {
 
 .taskListItems,
 .expiringItems,
-.notes {
+.notes,
+.events {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
@@ -85,7 +86,8 @@ button:hover {
 
 .taskListItems>span,
 .expiringItems>span,
-.notes>span {
+.notes>span,
+.event>span {
     justify-content: end;
 }
 
