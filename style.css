@@ -72,16 +72,6 @@ button:hover {
     width: 40%;
 }
 
-/* .taskListItems>li,
-.expirationListItems>li,
-.upcomingEvents>ul>li>span,
-.noteEntry>ul>li>span {
-    justify-content: center;
-    flex-direction: row;
-    display: inline;
-    justify-content: space-between;
-} */
-
 .taskListItems,
 .expiringItems {
     display: flex;
