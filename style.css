@@ -28,6 +28,10 @@ nav {
     letter-spacing: 0.1px;
 }
 
+.date {
+    text-align: center;
+}
+
 h2 {
     color: rgb(121, 219, 121);
 }
