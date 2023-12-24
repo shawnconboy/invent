@@ -130,7 +130,8 @@ button:hover {
 
 #taskInput,
 #expirationInput,
-#coworkerInput {
+#coworkerInput,
+#eventInput {
     width: 80%;
     padding: 10px;
     margin-bottom: 10px;
@@ -143,7 +144,8 @@ button:hover {
 
 #saveTaskBtn,
 #saveItemBtn,
-#saveNoteBtn {
+#saveNoteBtn,
+#saveEventBtn {
     background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
@@ -154,7 +156,8 @@ button:hover {
 
 #saveTaskBtn:hover,
 #saveItemBtn:hover,
-#saveNoteBtn:hover {
+#saveNoteBtn:hover,
+#saveEventBtn:hover {
     background-color: #45a049;
 }
 
