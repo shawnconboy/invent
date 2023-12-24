@@ -129,7 +129,8 @@ button:hover {
 }
 
 #taskInput,
-#expirationInput {
+#expirationInput,
+#coworkerInput {
     width: 80%;
     padding: 10px;
     margin-bottom: 10px;
@@ -141,7 +142,8 @@ button:hover {
 }
 
 #saveTaskBtn,
-#saveItemBtn {
+#saveItemBtn,
+#saveNoteBtn {
     background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
@@ -151,7 +153,8 @@ button:hover {
 }
 
 #saveTaskBtn:hover,
-#saveItemBtn:hover {
+#saveItemBtn:hover,
+#saveNoteBtn:hover {
     background-color: #45a049;
 }
 

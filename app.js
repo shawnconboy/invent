@@ -180,8 +180,10 @@ document.addEventListener('DOMContentLoaded', function () {
 // 
 // 
 // Coworker Related Code
+// JavaScript
+
 let addNoteBtn = document.getElementById('addNoteBtn');
-let noteList = document.getElementById('noteList');
+let noteList = document.querySelector('.noteList'); // Fix this line
 let coworkerInput = document.getElementById('coworkerInput');
 let saveNoteBtn = document.getElementById('saveNoteBtn');
 
@@ -250,3 +252,7 @@ coworkerInput.addEventListener('keyup', function (event) {
     }
 });
 
+// Function to capitalize the first letter of each word
+function capitalizeWords(str) {
+    return str.replace(/\b\w/g, (char) => char.toUpperCase());
+}
