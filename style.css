@@ -2,7 +2,7 @@ body {
     background-color: rgb(29, 29, 29);
     color: white;
     font-size: 16pt;
-    margin: 2% 0%;
+    margin: 2% 1%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -166,14 +166,14 @@ button:hover {
 }
 
 footer>p {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     margin: 0;
     padding: 0;
     display: block;
     width: 100%;
     text-align: center;
-    background-color: #28282862;
+    background-color: #282828;
     color: #fff;
 }
 
