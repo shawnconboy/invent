@@ -17,6 +17,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function closeModals() {
+        let modals = document.querySelectorAll('.modal');
+        modals.forEach((modal) => {
+            if (modal.style.display === 'block') {
+                modal.style.display = 'none';
+            }
+        });
+    }
+
     addTaskBtn.addEventListener('click', function () {
         document.getElementById('taskModal').style.display = 'block';
         taskInput.value = '';
@@ -91,6 +100,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closeModals();
+        }
+    });
 
     // 
     // 
